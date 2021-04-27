@@ -1,0 +1,8 @@
+<div *ngFor="let produto  of produtos" class="container">
+    <div (click)="adicionarItem(produto)">
+        <strong> {{produto.nome}}</strong><br><br>
+        <small> {{produto.descricao}}</small><br>
+        <small> {{produto.preco | currency: 'BRL'}}</small>
+        <img src="{{produto.imagem}}">
+    </div>
+</div>

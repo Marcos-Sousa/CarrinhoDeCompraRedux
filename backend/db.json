@@ -1,0 +1,60 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Hamburguer",
+            "descricao": "carne, salada, bacon,",
+            "preco": 7.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 2,
+            "nome": "X Salada",
+            "descricao": "carne, salada, bacon, hamburguer, ovo",
+            "preco": 15.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 3,
+            "nome": "Refrigerante Coca",
+            "descricao": "coca cola 2 litros",
+            "preco": 10.32,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 4,
+            "nome": "Feijoada",
+            "descricao": "Feijão, bacon, carne, ovo, limão",
+            "preco": 40.54,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 5,
+            "nome": "Açai 2 litros",
+            "descricao": "açaí puro sem açucar",
+            "preco": 47.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 6,
+            "nome": "Sorvete 2 litros",
+            "descricao": "Sorvete puro sem açucar",
+            "preco": 37.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 7,
+            "nome": "Suco de laranja",
+            "descricao": "sem açucar, 1 litro",
+            "preco": 10.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        },
+        {
+            "id": 8,
+            "nome": "Suco de Limão",
+            "descricao": "com açucar, 1 litro",
+            "preco": 12.99,
+            "imagem": "https://semantic-ui.com/images/wireframe/image.png"
+        }
+    ]
+}
