@@ -2,34 +2,37 @@ import { ActionModel } from "../modelos/action.model";
 import { CartModel } from "../modelos/cart.model";
 import { ProductModel } from "../modelos/product.model";
 import { ActionTypes } from "./cart-action";
- 
-  let cart: any;
 
-export function cartReducer(state  = cart, action: ActionModel):CartModel {
 
+const cart: CartModel = new CartModel();
+
+export function cartReducer(state = cart, action: ActionModel): CartModel {
     switch (action.type) {
         case ActionTypes.Add:
             {
-                console.log('item', action.payload)
-
-                state.products.push(action.payload);
-                console.log('item', state.products)
-
-                state.total  = calculeteTotal(state.products)
+                state = {
+                    products: [...state.products, action.payload],
+                    total: 0
+                }
+                state.total = calculeteTotal(state.products);
                 return state;
             };
         case ActionTypes.Remover:
             {
-                const index = state.products.indexOf(action.payload);
-                state.products.slice(index, 1);
-                state.total = calculeteTotal(state.products)
+                state = {
+                    products: [...state.products.filter(p => p.id !== action.payload.id)],
+                    total: 0
+                }
+                state.total = calculeteTotal(state.products);
                 return state;
             };
         case ActionTypes.Limpar:
             {
-                state = new CartModel();
-                state.total = calculeteTotal(state.products);
-                return state;
+                return {
+                    ...state,
+                    products: [],
+                    total: 0
+                };
             }
         default:
             return state;
