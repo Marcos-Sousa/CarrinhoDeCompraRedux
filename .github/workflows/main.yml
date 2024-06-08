@@ -1,0 +1,15 @@
+name: primeira-pipeline
+on:
+  push: 
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  primero-job:
+    name: "meu primeiro job"
+    runs-on: unbunt-latest
+    steps:
+      - name: "minha primeira ação"
+        run: echo "Hello World!!!"
+      - name: "Segunda ação"
+        run: echo "Primeiro worflow"
+  
