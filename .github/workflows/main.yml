@@ -11,5 +11,7 @@ jobs:
       - name: "minha primeira ação"
         run: echo "Hello World!!!"
       - name: "Segunda ação"
-        run: echo "Primeiro worflow"
+        run: |
+          echo "Primeiro worflow"
+          echo "deu certinho"
   
