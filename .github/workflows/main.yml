@@ -18,6 +18,9 @@ jobs:
     name: "segundo job"
     runs-on: ubuntu-latest
     steps:
-      - name: Test Angular app
-        run: npm run test --if-present       
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test   
   
