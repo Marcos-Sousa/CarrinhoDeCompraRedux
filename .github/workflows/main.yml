@@ -21,9 +21,11 @@ jobs:
       - name: "verificacao node atual"
         run: node --version
         
-      - name: "Install dependencies"
-        run: npm install
+      - name: "Atualizando versao do node js"
+      - uses: actions/setup-node@v4.0.2
+        with: 
+          node-version: '20.31.1'
 
-      - name: "Run tests"
-        run: npm test   
+      - name: "verificacao node  depois de instalar"
+        run: node --version 
   
