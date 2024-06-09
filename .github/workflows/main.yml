@@ -19,7 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install dependencies
+        working-directory: ./CarrinhoDeCompraRedux/package.json
         run: npm install
+
 
       - name: Run tests
         run: npm test   
